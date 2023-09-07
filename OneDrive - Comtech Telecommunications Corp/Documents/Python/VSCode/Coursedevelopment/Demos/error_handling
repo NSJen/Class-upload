@@ -1,0 +1,33 @@
+
+
+# The commented section adds error handling. 
+
+'''
+while True:
+    try:
+       print(int(quantity)>0)
+       break
+    except ValueError:
+       print("Please enter a number.")
+       quantity = input(f"How many {order} would you like to order? \n")
+    except:
+       print("That is not a valid entry.")
+       quantity = input(f"How many {order} would you like to order? \n")
+'''
+order = input("What would you like to order? \n")
+quantity = input(f"How many {order} would you like to order? \n")
+item_cost = 1.26
+
+if int(quantity)>0:
+    total = quantity*item_cost
+
+elif int(quantity) <= 0:
+    total = 0
+
+else:
+    print("That is an invalid input.")
+    
+print(f"You have ordered {quantity} {order}. Your total is ${round(total,2)}")
+print("Have a nice day.")
+
+

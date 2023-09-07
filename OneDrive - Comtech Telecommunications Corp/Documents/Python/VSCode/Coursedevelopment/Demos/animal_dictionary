@@ -1,0 +1,21 @@
+animal_list = "cat"
+for animal in animal_list:
+    print(animal)
+
+
+animal_list = ["cat" , "dog" , "frog" , "bug"]
+for i, animal in enumerate(animal_list):
+    if i+1<len(animal_list): # Making sure the index isn't too high and errors out. 
+        print(f"{animal} equals {animal_list[i+1]}") # Printing the next animal in line
+
+
+
+
+animal_dictionary = {
+"cat" : "Siamese", 
+"dog" : "Chihuahua",
+"rabbit" : "Rex", 
+}
+
+for key,value in animal_dictionary.items():
+    print(f"My {key} is a {value}.")
